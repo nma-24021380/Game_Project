@@ -2,23 +2,41 @@
 #define CARD_H_INCLUDED
 
 #include <SDL.h>
+#include <string>
 #include "Enemy.h"
+
+enum CardType {ATTACK, HEAL};
+
+const int TOTAL_CARDS = 6;
 
 class Card
 {
 public:
-    Card(const char* file);
-    void render();
-    void cardSelection(SDL_Event &event, Enemy* enemy);
-    void useCard(int cardNum, Enemy* enemy);
+    Card(CardType type, int star);
+    SDL_Rect getPos();
+
+    void render(SDL_Rect &destRect);
+    void updateEffect();
+
+    void useCard(int cardIndex, Enemy* enemy);
+
+    bool canMerge(Card* other);
+    void mergeWith(Card* other);
 
 private:
-    SDL_Texture* cardSprite;
-    SDL_Rect cardPos;
+    SDL_Texture* sprite;
+    SDL_Rect position;
 
-    int selectedCard = 0;
-    const int numCards = 5;
-    Uint32 lastKeyPress = 0;
+    CardType type;
+    int star;
+    std::string effect;
+
 };
+
+void renderDeck(Card* deck[]);
+
+void handleCardEvents(SDL_Event &event, Enemy* enemy, Card* deck[]);
+
+Card* getRandomCard();
 
 #endif // CARD_H_INCLUDED
