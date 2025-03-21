@@ -1,14 +1,10 @@
 #ifndef SCENEMANAGER_H_INCLUDED
 #define SCENEMANAGER_H_INCLUDED
 
-enum class SceneType
-{
-    ADVENTURE,
-    BATTLE
-};
+enum class SceneState {ADVENTURE, BATTLE};
 
-SceneType getScene();
-void setScene(SceneType scene);
+SceneState getScene();
+void setScene(SceneState scene);
 
 void renderAdventure();
 void renderBattle();
