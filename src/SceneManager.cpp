@@ -5,16 +5,16 @@
 #include "Defs.h"
 
 
-//SceneType SceneManager::currentScene = SceneType::ADVENTURE;
-SceneType currentScene = SceneType::ADVENTURE;
+//SceneState SceneManager::currentScene = SceneState::ADVENTURE;
+SceneState currentScene = SceneState::ADVENTURE;
 
 
-SceneType getScene()
+SceneState getScene()
 {
     return currentScene;
 }
 
-void setScene(SceneType scene)
+void setScene(SceneState scene)
 {
     currentScene = scene;
 }
