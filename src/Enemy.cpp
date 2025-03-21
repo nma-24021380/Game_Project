@@ -8,14 +8,14 @@ Enemy::Enemy(const char* file, int hp, int atk, int x, int y)
 
 void Enemy::update()
 {
-    if (getScene() == SceneType::BATTLE)
+    if (getScene() == SceneState::BATTLE)
     {
         position.x = 50;
         position.y = SCREEN_HEIGHT / 2;
 
         if (!(this->isAlive()))
         {
-            setScene(SceneType::ADVENTURE);
+            setScene(SceneState::ADVENTURE);
         }
     }
 
