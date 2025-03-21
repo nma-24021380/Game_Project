@@ -10,8 +10,10 @@
 
 Player* player = NULL;
 Enemy* enemy = NULL;
-Card* card = NULL;
+Card* deck[TOTAL_CARDS];
+
 SDL_Renderer* Game::renderer = NULL;
+GameState currentState = GameState::MENU;
 
 Game::Game()
 {}
@@ -48,7 +50,8 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
     }
     player = new Player("assets/player.png", 20, 5, 0, 0);
     enemy = new Enemy("assets/enemy.png", 20, 5, 100, 100);
-    card = new Card("assets/card_attack.png");
+
+
 }
 
 void Game::handleEvents()
@@ -63,9 +66,14 @@ void Game::handleEvents()
         }
         player->handleEvents(event);
 
-        if (getScene() == SceneType::BATTLE)
+        if (getScene() == SceneState::BATTLE)
         {
-            card->cardSelection(event, enemy);
+            if (currentState != GameState::BATTLE)
+            {
+                currentState = GameState::BATTLE;
+                for (int i = 0; i < TOTAL_CARDS; i++) deck[i] = getRandomCard();
+            }
+            handleCardEvents(event, enemy, deck);
         }
     }
 }
@@ -81,14 +89,14 @@ void Game::render()
 {
     SDL_RenderClear(Game::renderer);
 
-    if (getScene() == SceneType::ADVENTURE)
+    if (getScene() == SceneState::ADVENTURE)
     {
         renderAdventure();
     }
     else
     {
         renderBattle();
-        card->render();
+        renderDeck(deck);
     }
     enemy->render();
     player->render();
@@ -102,6 +110,10 @@ void Game::clean()
     SDL_DestroyRenderer(Game::renderer);
     delete player;
     delete enemy;
+    for (auto card : deck)
+    {
+        delete card;
+    }
     SDL_Quit();
     IMG_Quit();
     std::cout << "Game cleaned!\n";
