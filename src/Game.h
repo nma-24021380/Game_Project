@@ -3,6 +3,8 @@
 
 #include <SDL.h>
 
+enum class GameState {MENU, BATTLE};
+
 class Game
 {
 public:
@@ -21,6 +23,7 @@ public:
 private:
     bool isRunning;
     SDL_Window* window;
+    GameState currentState;
 
 };
 
