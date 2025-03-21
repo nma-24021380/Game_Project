@@ -23,12 +23,12 @@ void Player::handleEvents(SDL_Event &event)
 
 void Player::update(Enemy* enemy)
 {
-    if (getScene() == SceneType::BATTLE)
+    if (getScene() == SceneState::BATTLE)
     {
         position.x = SCREEN_WIDTH - position.w - 50;
         position.y = SCREEN_HEIGHT / 2;
     }
-    else if (getScene() == SceneType::ADVENTURE)
+    else if (getScene() == SceneState::ADVENTURE)
     {
         if (position.x < 0) position.x = 0;
         if (position.y < 0) position.y = 0;
@@ -37,9 +37,7 @@ void Player::update(Enemy* enemy)
 
         if (checkCollision(this->getBounds(), enemy->getBounds()))
         {
-            setScene(SceneType::BATTLE);
+            setScene(SceneState::BATTLE);
         }
     }
 }
-
-
