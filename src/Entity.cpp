@@ -2,15 +2,21 @@
 #include <SDL_image.h>
 #include "Game.h"
 
-Entity::Entity(const char* file, int hp, int atk, int x, int y) : health(hp), attack(atk)
+Entity::Entity(const char* file, const std::string &n, int hp, int atk, int x, int y)
+: name(n), maxHealth(hp), health(hp), attack(atk)
 {
     sprite = IMG_LoadTexture(Game::renderer, file);
     position = {x, y, 64, 64};
 }
 
+Entity::~Entity()
+{
+    SDL_DestroyTexture(sprite);
+}
+
 void Entity::render()
 {
-    SDL_RenderCopy(Game::renderer, sprite, NULL, &position);
+    SDL_RenderCopy(Game::renderer, sprite, nullptr, &position);
 }
 
 SDL_Rect Entity::getBounds()
@@ -26,7 +32,7 @@ void Entity::takeDamage(int damage)
 
 void Entity::dealDamageTo(Entity* target)
 {
-    target->takeDamage(attack);
+    target->takeDamage(this->attack);
 }
 
 bool Entity::isAlive()

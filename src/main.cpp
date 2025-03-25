@@ -3,7 +3,7 @@
 #include <ctime>
 #include <cstdlib>
 
-Game* game = NULL;
+Game* game = nullptr;
 
 int main(int argc, char* argv[])
 {

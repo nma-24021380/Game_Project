@@ -7,7 +7,7 @@ TileSet::TileSet(SDL_Renderer* renderer, const char* file, int size)
 {
     tileSize = size;
     tilesetTex = IMG_LoadTexture(renderer, file);
-    if (tilesetTex == NULL)
+    if (tilesetTex == nullptr)
     {
         std::cout << "Failed to render tile set! Error: " << IMG_GetError() << std::endl;
     }

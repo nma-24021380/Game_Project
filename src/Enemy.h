@@ -6,7 +6,7 @@
 class Enemy : public Entity
 {
 public:
-    Enemy(const char* file, int hp, int atk, int x, int y);
+    Enemy(const char* file, const std::string &n, int hp, int atk, int x, int y);
     void update();
 
 };

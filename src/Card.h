@@ -15,17 +15,19 @@ public:
     Card(CardType type, int star);
     SDL_Rect getPos();
 
-    void render(SDL_Rect &destRect);
+    void render(SDL_Rect &destRect, bool isSelected = false);
     void updateEffect();
+    void updateTexture();
 
     void useCard(int cardIndex, Enemy* enemy);
 
     bool canMerge(Card* other);
-    void mergeWith(Card* other);
+    void mergeWith(Card* other, Card* deck[]);
 
 private:
     SDL_Texture* sprite;
     SDL_Rect position;
+    int blinkTimer = 0;
 
     CardType type;
     int star;
