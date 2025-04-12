@@ -1,0 +1,141 @@
+# depslib dependency file v1.0
+1742808147 source:d:\c++\game_project\main.cpp
+	"Game.h"
+	"Defs.h"
+	<ctime>
+	<cstdlib>
+
+1741941655 d:\c++\game_project\game.hpp
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+
+1744378721 source:d:\c++\game_project\game.cpp
+	"Game.h"
+	"Player.h"
+	"Enemy.h"
+	"TileSet.h"
+	"Defs.h"
+	"SceneManager.h"
+	"Card.h"
+	"Battle.h"
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<iostream>
+
+1743927181 d:\c++\game_project\game.h
+	<SDL.h>
+
+1742010429 source:d:\c++\game_project\texturemanager.cpp
+	"TextureManager.h"
+
+1742010235 d:\c++\game_project\texturemanager.h
+	"Game.h"
+
+1744046928 d:\c++\game_project\player.h
+	"Entity.h"
+	"Enemy.h"
+	"TileSet.h"
+
+1744382344 source:d:\c++\game_project\player.cpp
+	"Player.h"
+	"Defs.h"
+	"SceneManager.h"
+	"Utils.h"
+	"Game.h"
+	<SDL_image.h>
+	<iostream>
+
+1743347501 d:\c++\game_project\defs.h
+
+1743323738 d:\c++\game_project\tileset.h
+	<SDL.h>
+	<vector>
+	"Game.h"
+
+1743332048 source:d:\c++\game_project\tileset.cpp
+	"TileSet.h"
+	"Defs.h"
+	<SDL_image.h>
+	<iostream>
+	<fstream>
+	<string>
+
+1743570785 d:\c++\game_project\utils.h
+	<SDL.h>
+	<string>
+	"TileSet.h"
+
+1744047085 d:\c++\game_project\enemy.h
+	"Entity.h"
+
+1744050198 source:d:\c++\game_project\enemy.cpp
+	"Enemy.h"
+	"SceneManager.h"
+	"Defs.h"
+
+1743570804 source:d:\c++\game_project\utils.cpp
+	"Utils.h"
+	"Defs.h"
+	"SceneManager.h"
+	"Game.h"
+	<SDL_ttf.h>
+	<iostream>
+
+1743934050 d:\c++\game_project\scenemanager.h
+	"Entity.h"
+	"TileSet.h"
+
+1744046859 source:d:\c++\game_project\scenemanager.cpp
+	"SceneManager.h"
+	"Card.h"
+	"Game.h"
+	"Defs.h"
+	"Utils.h"
+	<SDL_image.h>
+	<iostream>
+
+1744382820 d:\c++\game_project\card.h
+	<SDL.h>
+	<string>
+	"Enemy.h"
+	"Player.h"
+
+1744381482 source:d:\c++\game_project\card.cpp
+	"Card.h"
+	"Game.h"
+	"Defs.h"
+	"Utils.h"
+	"Battle.h"
+	<SDL_image.h>
+	<iostream>
+
+1744047153 d:\c++\game_project\entity.h
+	<SDL.h>
+	<string>
+	<map>
+	"Graphics.h"
+
+1744107830 source:d:\c++\game_project\entity.cpp
+	"Entity.h"
+	"Game.h"
+	<SDL_image.h>
+	<iostream>
+
+1743926523 d:\c++\game_project\graphics.h
+	<SDL.h>
+
+1743926831 source:d:\c++\game_project\graphics.cpp
+	"Graphics.h"
+	"Game.h"
+	<SDL_image.h>
+
+1744056435 d:\c++\game_project\battle.h
+	"Player.h"
+	"Enemy.h"
+	"Card.h"
+
+1744383413 source:d:\c++\game_project\battle.cpp
+	"Battle.h"
+	<iostream>
+
