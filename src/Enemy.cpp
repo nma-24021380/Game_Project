@@ -55,7 +55,7 @@ Enemy* Enemy::spawnRandomEnemy()
 
         if (availablePosition(x, y))
         {
-            new_enemy = new Enemy("...", 10, 2, x, y, tile_map->getMapX(), tile_map->getMapY());
+            new_enemy = new Enemy("...", 100, 2, x, y, tile_map->getMapX(), tile_map->getMapY());
             map_spawned.insert({tile_map->getMapX(), tile_map->getMapY()});
         }
     }
