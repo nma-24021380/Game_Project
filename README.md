@@ -24,6 +24,6 @@
 - 29/3/2025: Thêm cơ chế chọn thẻ.
 - 12/04/2025: Thêm lại thẻ cho đủ 6 thẻ sau mỗi turn, người chơi có tối đa 3 lượt hành động (chọn/ghép thẻ).
 - 13/04/2025: Thêm nút xác nhận (continue) và reset lựa chọn (cancel).
-- 25/04/2025: Thêm animation cho kẻ địch, hiệu ứng khi dùng thẻ, thêm âm thanh; thêm quy tắc chọn thẻ đơn giản cho kẻ địch; khi bị đánh bại/hoàn thành game sẽ có lựa chọn chơi lại (từ đầu).
+- 25/04/2025: Thêm hướng dẫn trong adventure và battle, animation cho kẻ địch, hiệu ứng khi dùng thẻ, thêm âm thanh; thêm quy tắc chọn thẻ đơn giản cho kẻ địch; khi bị đánh bại/hoàn thành game sẽ có lựa chọn chơi lại (từ đầu).
 ## 🎬 Demo Gameplay
-👉 [Xem video demo trên Google Drive](https://drive.google.com/file/d/1IdRyaAOh4NtbsQdGuaqBDPEbYYL5qTbL/view?usp=sharing)
+👉 [Xem video demo trên Google Drive](https://drive.google.com/file/d/1ChRQzgmRAo1bwS1PR8Dd4Y-GEEJxqCd-/view?usp=sharing)
