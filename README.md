@@ -1,19 +1,21 @@
-# Game_Project
-A 2D turn-based card game with adventure elements.
+# Card Game
+Game 2D turn-based thẻ bài.
 ## Features
-- Control character's movements in a dungeon(?).
-- Turn-based battle system using cards.
-- Card merging system: combine 2 cards of the same type & star into a higher star card with special effects.
-- Simple animations for movements and spell casting.
+- Điều khiển nhân vật di chuyển để tìm lối ra, trên đường đi sẽ gặp kẻ địch.
+- Chạm vào kẻ địch sẽ chuyển sang chế độ chiến đấu sử dụng thẻ bài.
+- Có thể ghép 2 thẻ cùng loại và cùng cấp sao thành thẻ có cấp sao cao hơn, thẻ 3 sao có hiệu ứng riêng.
 ## Gameplay
-- **Adventure Mode**: Control your character and walk around the dungeon.
-- **Battle Mode**: Touching an enemy switches the scene to battle.
-- **Card Play**: Select and combine cards to attack, heal, or apply effects.
-- **Win Condition**: Defeat the enemy to return to your adventure.
+![Di chuyển nhân vật (nhấn lên-xuống-trái-phải), khi chạm phải kẻ địch sẽ chuyển sang chế độ chiến đấu](demo_images/start.png)
+![Nhân vật có 6 thẻ, có thể chọn/ghép thẻ (nhấn G để xem hướng dẫn), sau mỗi lượt chơi sẽ bổ sung thẻ mới vào những thẻ đã dùng](demo_images/battle.png)
+![Ghép 2 thẻ có cùng loại và cấp sao thành thẻ có cấp sao cao hơn (tối đa 3)](demo_images/card_merging.png)
+![Đi đến cánh cửa để hoàn thành trò chơi](demo_images/ending.png)
+![Màn hình chiến thắng](demo_images/game_win.png)
+![Màn hình thất bại khi nhân vật còn 0 HP](demo_images/game_over.png)
 ## Development Status
-- 18/03/2025: Add adventure and battle scene (touching enemies will change scene to "battle"), character movements control, simple cards.
-- 21/03/2025: Add card types (attack & heal, 3-star attack card = debuff card, 3-star heal card = shield card), card merging, card deck.
-- 25/03/2025: Add player's animations, render HP bar and name in battle scene.
-- 29/3/2025: Add card selecting mechanics.
-- 12/04/2025: Refill card deck after each turn, player have 3 actions at max (select / merge card consume 1 action).
-- 13/04/2025: Add confirm button and reset selection button in battle
+- 18/03/2025: Thêm adventure scene và battle scene (chạm vào kẻ địch sẽ chuyển scene sang "battle"), điều khiển nhân vật, thẻ đơn giản.
+- 21/03/2025: Thêm các loại thẻ (attack & heal, thẻ attack 3 sao = thẻ debuff, thẻ heal 3 sao = thẻ shield (tránh 1 đòn đánh)), thêm cơ chế ghép thẻ, thêm bộ thẻ (tối đa 6 thẻ).
+- 25/03/2025: Thêm animation cho nhân vật, render thanh máu và tên trong battle.
+- 29/3/2025: Thêm cơ chế chọn thẻ.
+- 12/04/2025: Thêm lại thẻ cho đủ 6 thẻ sau mỗi turn, người chơi có tối đa 3 lượt hành động (chọn/ghép thẻ).
+- 13/04/2025: Thêm nút xác nhận (continue) và reset lựa chọn (cancel).
+- 25/04/2025: Thêm animation cho kẻ địch, hiệu ứng khi dùng thẻ, thêm âm thanh; thêm quy tắc chọn thẻ đơn giản cho kẻ địch; khi bị đánh bại/hoàn thành game sẽ có lựa chọn chơi lại (từ đầu).
