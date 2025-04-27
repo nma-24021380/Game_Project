@@ -1,6 +1,12 @@
 # Adventure Card Game
 > Game 2D turn-based thẻ bài.
 
+## 🛠 Công Nghệ Sử Dụng
+- **C++:**  Ngôn ngữ lập trình chính để phát triển game.
+- **SDL2, SDL_image, SDL_mixer, SDL_ttf:**  Thư viện xử lý đồ họa 2D, sự kiện, âm thanh, font chữ.
+- **Code::Blocks:**  IDE sử dụng để phát triển và debug project.
+- **Git & GitHub:**  Lưu trữ source code.
+
 ## 🎯 Tính năng
 - Điều khiển nhân vật di chuyển để tìm lối ra, trên đường đi sẽ gặp kẻ địch.
 - Chạm vào kẻ địch sẽ chuyển sang chế độ chiến đấu sử dụng thẻ bài.
@@ -34,6 +40,8 @@ Màn hình thất bại khi nhân vật còn 0 HP.<br>
 | **Stun** | ![Stun Card](assets/cards/stun.png) | Gây thêm hiệu ứng choáng (không thể hành động trong turn tiếp theo).|
 | **Shield** | ![Shield Card](assets/cards/shield.png) | Tạo lá chắn (chặn đòn đánh tiếp theo). |
 
+## 🎬 Demo Gameplay
+👉 [Xem video demo trên Google Drive](https://drive.google.com/file/d/1ChRQzgmRAo1bwS1PR8Dd4Y-GEEJxqCd-/view?usp=drive_link)
 
 ## 📑 Cập nhật
 - 18/03/2025: Thêm adventure scene và battle scene (chạm vào kẻ địch sẽ chuyển scene sang "battle"), điều khiển nhân vật, thẻ đơn giản.
@@ -43,5 +51,9 @@ Màn hình thất bại khi nhân vật còn 0 HP.<br>
 - 12/04/2025: Thêm lại thẻ cho đủ 6 thẻ sau mỗi turn, người chơi có tối đa 3 lượt hành động (chọn/ghép thẻ).
 - 13/04/2025: Thêm nút xác nhận (continue) và reset lựa chọn (cancel).
 - 25/04/2025: Thêm hướng dẫn trong adventure và battle, animation cho kẻ địch, hiệu ứng khi dùng thẻ, thêm âm thanh; thêm quy tắc chọn thẻ đơn giản cho kẻ địch; khi bị đánh bại/hoàn thành game sẽ có lựa chọn chơi lại (từ đầu).
-## 🎬 Demo Gameplay
-👉 [Xem video demo trên Google Drive](https://drive.google.com/file/d/1ChRQzgmRAo1bwS1PR8Dd4Y-GEEJxqCd-/view?usp=drive_link)
+
+## 📚 Nguồn Tham Khảo
+- **Nhạc nền và hiệu ứng âm thanh:** [OpenGameArt](https://opengameart.org)
+- **Sprite nhân vật và kẻ địch:** [Ralsei](https://www.spriters-resource.com/fullview/110469/)
+- **Sprite hiệu ứng tấn công:** [Explosion](https://opengameart.org/content/pixel-explosion-12-frames)
+- **Font chữ:** [Font](https://www.fontspace.com/determination-mono-web-font-f23209)
