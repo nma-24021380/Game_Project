@@ -57,3 +57,4 @@ Màn hình thất bại khi nhân vật còn 0 HP.<br>
 - **Sprite nhân vật và kẻ địch:** [Ralsei](https://www.spriters-resource.com/fullview/110469/)
 - **Sprite hiệu ứng tấn công:** [Explosion](https://opengameart.org/content/pixel-explosion-12-frames)
 - **Font chữ:** [Font](https://www.fontspace.com/determination-mono-web-font-f23209)
+- **Tham khảo cách set up và game loop:** [Let's Make Games](https://www.youtube.com/watch?v=QQzAHcojEKg&list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx)
