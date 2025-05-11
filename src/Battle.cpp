@@ -28,7 +28,6 @@ int action_count = 0;               // so luot hanh dong hien tai
 bool card_playing = false;
 int play_order = 1;
 
-std::set<std::pair<int, int>> defeated_maps;
 int enemy_card_count = 0;
 
 bool in_confirm_menu = false;
