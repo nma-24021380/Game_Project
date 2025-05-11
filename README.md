@@ -41,7 +41,7 @@ Màn hình thất bại khi nhân vật còn 0 HP.<br>
 | **Shield** | ![Shield Card](assets/cards/shield.png) | Tạo lá chắn (chặn đòn đánh tiếp theo). |
 
 ## 🎬 Demo Gameplay
-👉 [Xem video demo trên Google Drive](https://drive.google.com/file/d/1ChRQzgmRAo1bwS1PR8Dd4Y-GEEJxqCd-/view?usp=drive_link)
+👉 [Video Demo gameplay và code của game](https://drive.google.com/drive/folders/1G2vmx5-sygysb_ORgdtw96ZC4yAy7kku?dmr=1&ec=wgc-drive-globalnav-goto)
 
 ## 📑 Cập nhật
 - 18/03/2025: Thêm adventure scene và battle scene (chạm vào kẻ địch sẽ chuyển scene sang "battle"), điều khiển nhân vật, thẻ đơn giản.
