@@ -168,18 +168,3 @@ void refillCardDeck()
         ++valid_cards;
     }
 }
-
-void mergeCards(int index)
-{
-    if (selecting >= 0 && selecting < valid_cards - 1
-        && selectOrder[selecting] == 0 && selectOrder[selecting + 1] == 0
-        && deck[selecting]->canMerge(deck[selecting + 1]))
-    {
-        deck[index]->mergeWith(deck[index + 1]);
-
-        for (int i = index + 1; i < valid_cards - 1; ++i)
-        {
-            selectOrder[i] = selectOrder[i + 1];
-        }
-    }
-}
