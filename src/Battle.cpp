@@ -247,8 +247,19 @@ void handlePlayerTurn()
             }
             break;
         case SDLK_m:
-            mergeCards(selecting);
-            ++action_count;
+            if (selecting >= 0 && selecting < valid_cards - 1
+                && selectOrder[selecting] == 0 && selectOrder[selecting + 1] == 0
+                && deck[selecting]->canMerge(deck[selecting + 1]))
+            {
+                deck[selecting]->mergeWith(deck[selecting + 1]);
+
+                for (int i = selecting + 1; i < valid_cards - 1; ++i)
+                {
+                    selectOrder[i] = selectOrder[i + 1];
+                }
+
+                ++action_count;
+            }
             break;
         }
 
