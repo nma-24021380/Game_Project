@@ -44,6 +44,4 @@ void refillCardDeck();
 
 Card* getRandomCard();
 
-void mergeCards(int index);
-
 #endif // CARD_H_INCLUDED
